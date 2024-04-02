@@ -38,24 +38,29 @@
             imageList1 = new ImageList(components);
             label2 = new Label();
             label3 = new Label();
+            statusStrip1 = new StatusStrip();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStripLabel1 = new ToolStripLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Location = new Point(12, 15);
+            pictureBox1.Location = new Point(12, 31);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(169, 169);
+            pictureBox1.Size = new Size(160, 160);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(12, 190);
+            button1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(12, 197);
             button1.Name = "button1";
-            button1.Size = new Size(362, 35);
+            button1.Size = new Size(362, 28);
             button1.TabIndex = 1;
             button1.Text = "Randomize";
             button1.UseVisualStyleBackColor = true;
@@ -64,7 +69,7 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(187, 76);
+            textBox1.Location = new Point(187, 89);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(187, 27);
             textBox1.TabIndex = 2;
@@ -72,7 +77,7 @@
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Location = new Point(187, 109);
+            textBox2.Location = new Point(187, 122);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(187, 27);
             textBox2.TabIndex = 3;
@@ -81,7 +86,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(187, 53);
+            label1.Location = new Point(187, 66);
             label1.Name = "label1";
             label1.Size = new Size(67, 20);
             label1.TabIndex = 4;
@@ -135,26 +140,27 @@
             imageList1.Images.SetKeyName(40, "mewtwo_x.jpg");
             imageList1.Images.SetKeyName(41, "mewtwo_y.jpg");
             imageList1.Images.SetKeyName(42, "mimikyu.jpg");
-            imageList1.Images.SetKeyName(43, "mr. mime.jpg");
-            imageList1.Images.SetKeyName(44, "ninetails.jpg");
-            imageList1.Images.SetKeyName(45, "pikachu.jpg");
-            imageList1.Images.SetKeyName(46, "sableye.jpg");
-            imageList1.Images.SetKeyName(47, "scizor.jpg");
-            imageList1.Images.SetKeyName(48, "scyther.jpg");
-            imageList1.Images.SetKeyName(49, "slowbro.jpg");
-            imageList1.Images.SetKeyName(50, "snorlax.jpg");
-            imageList1.Images.SetKeyName(51, "sylveon.jpg");
-            imageList1.Images.SetKeyName(52, "talonflame.jpg");
-            imageList1.Images.SetKeyName(53, "trevenant.jpg");
-            imageList1.Images.SetKeyName(54, "tsareena.jpg");
-            imageList1.Images.SetKeyName(55, "tyranitar.jpg");
-            imageList1.Images.SetKeyName(56, "umbreon.jpg");
-            imageList1.Images.SetKeyName(57, "urshifu.jpg");
-            imageList1.Images.SetKeyName(58, "venusaur.jpg");
-            imageList1.Images.SetKeyName(59, "wigglytuff.jpg");
-            imageList1.Images.SetKeyName(60, "zacian.jpg");
-            imageList1.Images.SetKeyName(61, "zeraora.jpg");
-            imageList1.Images.SetKeyName(62, "zoroark.jpg");
+            imageList1.Images.SetKeyName(43, "miraidon.jpg");
+            imageList1.Images.SetKeyName(44, "mr. mime.jpg");
+            imageList1.Images.SetKeyName(45, "ninetails.jpg");
+            imageList1.Images.SetKeyName(46, "pikachu.jpg");
+            imageList1.Images.SetKeyName(47, "sableye.jpg");
+            imageList1.Images.SetKeyName(48, "scizor.jpg");
+            imageList1.Images.SetKeyName(49, "scyther.jpg");
+            imageList1.Images.SetKeyName(50, "slowbro.jpg");
+            imageList1.Images.SetKeyName(51, "snorlax.jpg");
+            imageList1.Images.SetKeyName(52, "sylveon.jpg");
+            imageList1.Images.SetKeyName(53, "talonflame.jpg");
+            imageList1.Images.SetKeyName(54, "trevenant.jpg");
+            imageList1.Images.SetKeyName(55, "tsareena.jpg");
+            imageList1.Images.SetKeyName(56, "tyranitar.jpg");
+            imageList1.Images.SetKeyName(57, "umbreon.jpg");
+            imageList1.Images.SetKeyName(58, "urshifu.jpg");
+            imageList1.Images.SetKeyName(59, "venusaur.jpg");
+            imageList1.Images.SetKeyName(60, "wigglytuff.jpg");
+            imageList1.Images.SetKeyName(61, "zacian.jpg");
+            imageList1.Images.SetKeyName(62, "zeraora.jpg");
+            imageList1.Images.SetKeyName(63, "zoroark.jpg");
             // 
             // label2
             // 
@@ -176,12 +182,56 @@
             label3.Text = "to begin.";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // statusStrip1
+            // 
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Location = new Point(0, 204);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(386, 24);
+            statusStrip1.SizingGrip = false;
+            statusStrip1.TabIndex = 6;
+            statusStrip1.Text = "statusStrip1";
+            statusStrip1.Visible = false;
+            // 
+            // toolStrip1
+            // 
+            toolStrip1.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripLabel1 });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(386, 27);
+            toolStrip1.TabIndex = 7;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(29, 24);
+            toolStripButton1.Text = "Connect to Twitch";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.IsLink = true;
+            toolStripLabel1.LinkBehavior = LinkBehavior.HoverUnderline;
+            toolStripLabel1.LinkColor = Color.Black;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(127, 24);
+            toolStripLabel1.Text = "Connect to Twitch";
+            toolStripLabel1.Click += toolStripLabel1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(386, 228);
+            Controls.Add(toolStrip1);
+            Controls.Add(statusStrip1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -196,6 +246,8 @@
             Text = "Pokemon UNITE Randomizer";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -210,5 +262,9 @@
         private ImageList imageList1;
         private Label label2;
         private Label label3;
+        private StatusStrip statusStrip1;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripLabel toolStripLabel1;
     }
 }
